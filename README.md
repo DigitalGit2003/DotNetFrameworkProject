@@ -1,1 +1,1 @@
-# Elecction-Management-System using .NetFramework
+# Election-Management-System using .NetFramework
