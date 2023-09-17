@@ -13,5 +13,36 @@ namespace ElectionManagementSystem.Views
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            string email = tbEmail.Text;
+            string password = tbPassword.Text;
+
+            EMSEntities db = new EMSEntities();
+            Voter voter = db.Voters.Where(x => x.Email == email).FirstOrDefault<Voter>();
+            if (voter == null)
+            {
+                lblEmailValidate.Text = $"User with {email} does not exist";
+                return;
+            }
+            else
+            {
+                lblEmailValidate.Text = "";
+                if (voter.Password != password)
+                {
+                    lblPasswordValidate.Text = "Enter correct password";
+                    return;
+                }
+                else
+                {
+                    lblPasswordValidate.Text = "";
+                    Response.Redirect("~/Views/Home.aspx");
+                }
+            }
+
+
+
+        }
     }
 }

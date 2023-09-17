@@ -19,41 +19,54 @@
                         </div>
 
                         <h3 class="text-center">Voter Registration</h3>
+                          <asp:Label ID="lblSignUpSuccessfull" runat="server" ForeColor="Green"></asp:Label>
+                            
                         <hr>
 
                         <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Username"></asp:TextBox>
+                            <label for="username" class="form-label">Username<asp:RequiredFieldValidator ID="rfvUsername" runat="server" ControlToValidate="tbUsername" ErrorMessage="Username is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </label>
+                            &nbsp;<asp:TextBox CssClass="form-control" ID="tbUsername" runat="server" placeholder="Username"></asp:TextBox>
                         </div>
                         
                         <div class="mb-3">
-                            <label for="emailID" class="form-label">Email ID</label>
-                            <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email ID"></asp:TextBox>
+                            <label for="emailID" class="form-label">Email ID</label><asp:CustomValidator ID="cvEmailUnique" runat="server" ErrorMessage="This Email is already registered." ControlToValidate="tbEmail" ForeColor="Red" OnServerValidate="EmailUnique_Validate"></asp:CustomValidator>
+                            <label for="username" class="form-label">
+                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="tbEmail" ErrorMessage="Email is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </label>
+                            <asp:TextBox CssClass="form-control" ID="tbEmail" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
                         </div>
 
                         <div class="mb-3">
-                            <label for="age" class="form-label">Age</label>
-                            <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Age"></asp:TextBox>
+                            <label for="age" class="form-label">Age<label for="username" class="form-label"><asp:RequiredFieldValidator ID="rfvAge" runat="server" ControlToValidate="tbAge" ErrorMessage="Age is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </label>
+                            </label>
+                            &nbsp;<asp:TextBox CssClass="form-control" ID="tbAge" runat="server" placeholder="Age" TextMode="Number"></asp:TextBox>
                         </div>
 
 
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                            <label for="password" class="form-label">Password<label for="username" class="form-label"><asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="tbPassword" ErrorMessage="Password is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </label>
+                            </label>
+                            &nbsp;<asp:TextBox CssClass="form-control" ID="tbPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
 
                         <div class="mb-3">
                             <label for="cpassword" class="form-label">Confirm Password</label>
-                            <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
+&nbsp;<asp:TextBox CssClass="form-control" ID="tbConfirmPassword" runat="server" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
+                            <asp:Label ID="lblConfirmPassword" runat="server" ForeColor="Red"></asp:Label>
                         </div>
 
                      
                         <br>
 
                         <div class="d-grid gap-2">
-                            <asp:Button class="btn btn-success btn-block" ID="Button1" runat="server" Text="SignUp" />
+                            <asp:Button class="btn btn-success btn-block" ID="btnSignUp" runat="server" Text="SignUp" OnClick="btnSignUp_Click" />
 
                             <a href="Login.aspx" class="btn btn-info btn-block">Login</a>
+                            
+                          
                         </div>
 
                     </div>
