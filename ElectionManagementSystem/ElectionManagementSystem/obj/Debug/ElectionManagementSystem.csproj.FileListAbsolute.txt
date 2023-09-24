@@ -57,3 +57,7 @@ D:\SEM-5\WAD\DNF_Project\DotNetFrameworkProject\ElectionManagementSystem\Electio
 D:\SEM-5\WAD\DNF_Project\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.csproj.CopyComplete
 D:\SEM-5\WAD\DNF_Project\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.dll
 D:\SEM-5\WAD\DNF_Project\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.pdb
+C:\Users\lathi\OneDrive\Documents\sem-5\WAD\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.csproj.AssemblyReference.cache
+C:\Users\lathi\OneDrive\Documents\sem-5\WAD\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\lathi\OneDrive\Documents\sem-5\WAD\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.dll
+C:\Users\lathi\OneDrive\Documents\sem-5\WAD\DotNetFrameworkProject\ElectionManagementSystem\ElectionManagementSystem\obj\Debug\ElectionManagementSystem.pdb

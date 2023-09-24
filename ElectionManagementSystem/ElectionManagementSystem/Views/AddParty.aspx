@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/EMS.Master" AutoEventWireup="true" CodeBehind="AddParty.aspx.cs" Inherits="ElectionManagementSystem.Views.AddParty" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/EMS.Master" AutoEventWireup="true" CodeFile="AddParty.aspx.cs" Inherits="ElectionManagementSystem.Views.AddParty" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -58,7 +58,6 @@
                         <hr>
                         <div class="d-grid gap-2">
                             <asp:Button class="btn btn-success btn-block" ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
-
                            <a href="Home.aspx" class="btn btn-info btn-block">Party List</a>
                         </div>
 

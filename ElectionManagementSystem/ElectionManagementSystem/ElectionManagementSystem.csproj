@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="images\voter.jpeg" />
     <Content Include="Views\AddParty.aspx" />
+    <Content Include="Views\AdminLogin.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\PartyProfile.aspx" />
     <Content Include="Views\Register.aspx" />
+    <Content Include="Views\UserLogin.aspx" />
     <Content Include="Views\VoterProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -84,6 +86,13 @@
     </Compile>
     <Compile Include="Views\AddParty.aspx.designer.cs">
       <DependentUpon>AddParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\EMS.Master.cs">
       <DependentUpon>EMS.Master</DependentUpon>
@@ -119,6 +128,13 @@
     </Compile>
     <Compile Include="Views\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\VoterProfile.aspx.cs">
       <DependentUpon>VoterProfile.aspx</DependentUpon>
