@@ -1,0 +1,59 @@
+﻿/* Style for the party grid */
+.party-grid {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Style for each party card */
+.party-card {
+    display: inline-block; /* Display cards side by side */
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: top; /* Align the top of the cards */
+}
+
+/* Style for the party image */
+.party-image {
+    height: 175px;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+/* Style for the party details */
+.party-details {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Style for the party votes */
+.party-votes {
+    text-align: center;
+}
+
+/* Style for the vote count */
+.vote-count {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style for the vote button */
+.btn-vote {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-vote:hover {
+    background-color: #0056b3;
+}
