@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Admin">
           <Key>
             <PropertyRef Name="Id" />
@@ -32,7 +32,7 @@
           <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="30" Nullable="false" />
-          <Property Name="DOB" Type="datetime" Nullable="false" />
+          <Property Name="DOB" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Address" Type="nvarchar" MaxLength="200" />
           <Property Name="Phone" Type="nvarchar" MaxLength="10" />
           <Property Name="IsVoted" Type="int" Nullable="false" />
@@ -42,8 +42,7 @@
           <EntitySet Name="Party" EntityType="Self.Party" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Voter" EntityType="Self.Voter" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -74,7 +73,7 @@
           <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DOB" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="IsVoted" Type="Int32" Nullable="false" />

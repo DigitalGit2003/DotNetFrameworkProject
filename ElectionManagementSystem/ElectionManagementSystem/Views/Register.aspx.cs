@@ -23,7 +23,7 @@ namespace ElectionManagementSystem.Views
             }
             string username = tbName.Text;
             string email = tbEmail.Text;
-            DateTime dob = Convert.ToDateTime(tbDOB.Text);
+            string dob = tbDOB.Text;
             string password = tbPassword.Text;
             string cpassword = tbConfirmPassword.Text;
             if (password != cpassword)

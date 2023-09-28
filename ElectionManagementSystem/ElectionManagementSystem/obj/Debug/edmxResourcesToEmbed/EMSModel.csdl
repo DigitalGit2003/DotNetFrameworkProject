@@ -27,7 +27,7 @@
     <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DOB" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="Phone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="IsVoted" Type="Int32" Nullable="false" />

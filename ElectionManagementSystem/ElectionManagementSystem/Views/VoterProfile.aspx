@@ -34,7 +34,7 @@
                             <div class="col-md-6">
                                 <label for="phone">Phone </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbPhone" runat="server" placeholder="Phone" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbPhone" runat="server" placeholder="Phone"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <div class="col">
                                 <label for="address">Full Address</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbAddress" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbAddress" runat="server" placeholder="Full Address" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             <div class="col-md-4">
                                 <label for="oldpass">Old Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbOldPassword" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbOldPassword" runat="server" placeholder="Old Password" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -77,7 +77,7 @@
                         <div class="row">
                             <div class="col-8 mx-auto text-center">
                                 <div class="form-group">
-                                    <asp:Button CssClass="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" />
+                                    <asp:Button CssClass="btn btn-primary btn-block btn-lg" ID="Update" runat="server" Text="Update" OnClick="Update_Click" />
                                 </div>
                             </div>
                         </div>
