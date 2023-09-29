@@ -1,0 +1,7 @@
+App_Data
+
+
+*.zip
+.vs
+# 
+packages 
