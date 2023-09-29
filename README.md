@@ -1,8 +1,8 @@
 # Election Management System Using ASP.NET Framework 
 
 
-if you want to manage election of some committee in which your voters are virtual. In that case our project might help to reduce your some task.
-It will help to find candidate which has high votes from all voters. 
+If you want to manage election of some committee in which your voters are virtual. In that case, Our project might help to reduce your some task.
+It will help to find a candidate who has high votes from all voters. 
 
 ## Entities 
 |Name| |
