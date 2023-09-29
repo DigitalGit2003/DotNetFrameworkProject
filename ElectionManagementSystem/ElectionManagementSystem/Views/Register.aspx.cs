@@ -24,6 +24,15 @@ namespace ElectionManagementSystem.Views
             string username = tbName.Text;
             string email = tbEmail.Text;
             string dob = tbDOB.Text;
+            //DateTime curr = DateTime.Now;
+            //DateTime bd = Convert.ToDateTime(dob);
+            //TimeSpan timeSpan = curr - bd;
+            //int years = (int)(timeSpan.TotalDays / 365.25);
+            //if(years < 18)
+            //{
+            //    Response.Write("<script>alert('Your age should must be at least 18.');</script>");
+            //    return;
+            //}
             string password = tbPassword.Text;
             string cpassword = tbConfirmPassword.Text;
             if (password != cpassword)
@@ -61,6 +70,20 @@ namespace ElectionManagementSystem.Views
             {
                 flag = 1;
                 lblSignUpSuccessfull.Text = "";
+                args.IsValid = false;
+            }
+        }
+
+        protected void AgeCheck(object source, ServerValidateEventArgs args)
+        {
+            string dob = tbDOB.Text;
+            DateTime curr = DateTime.Now;
+            DateTime bd = Convert.ToDateTime(dob);
+            TimeSpan timeSpan = curr - bd;
+            int years = (int)(timeSpan.TotalDays / 365.25);
+            if (years < 18)
+            {
+                flag = 1;
                 args.IsValid = false;
             }
         }

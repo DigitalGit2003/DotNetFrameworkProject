@@ -39,7 +39,8 @@
 
                         <div class="mb-3">
                             <label for="dob" class="form-label">DOB&nbsp;&nbsp; </label><asp:RequiredFieldValidator ID="rfvDOB" runat="server" ControlToValidate="tbDOB" ErrorMessage="DOB is required" ForeColor="Red"></asp:RequiredFieldValidator>                            
-                            &nbsp;<asp:TextBox CssClass="form-control" ID="tbDOB" runat="server" placeholder="DOB" TextMode="Date"></asp:TextBox>
+                            &nbsp;&nbsp; <asp:CustomValidator ID="cvAgeCheck" runat="server" ErrorMessage="Your Age must be atleast 18." ControlToValidate="tbEmail" ForeColor="Red" OnServerValidate="AgeCheck"></asp:CustomValidator>
+                            <asp:TextBox CssClass="form-control" ID="tbDOB" runat="server" placeholder="DOB" TextMode="Date"></asp:TextBox>
                         </div>
 
 

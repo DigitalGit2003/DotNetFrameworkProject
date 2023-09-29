@@ -10,6 +10,8 @@ namespace ElectionManagementSystem.Views
 {
     public partial class VoterProfile : System.Web.UI.Page
     {
+
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             EMSEntities db = new EMSEntities();
@@ -39,9 +41,15 @@ namespace ElectionManagementSystem.Views
 
             string name = tbName.Text;
             string dob = tbDOB.Text;
+
             string address = tbAddress.Text;
             string phone = tbPhone.Text;
             string newpass = tbNewPassword.Text;
+
+
+            // debugging
+            Response.Write("address : " + address);
+            Response.Write("phone : " + phone);
 
             if (newpass.Equals(""))
             {
@@ -61,8 +69,8 @@ namespace ElectionManagementSystem.Views
 
                 db.Entry(vtr).State = EntityState.Modified;
                 db.SaveChanges();
-
-                Response.Write("<script>alert'debug : "+ address + "/ " + phone +"');</script>");
+                Response.Redirect("VoterProfile.aspx");
+                //Response.Write("<script>alert'debug : "+ address + "/ " + phone +"');</script>");
             }
         }
     }

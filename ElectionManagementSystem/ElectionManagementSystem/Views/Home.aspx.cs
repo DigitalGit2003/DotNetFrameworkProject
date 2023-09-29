@@ -17,7 +17,10 @@ namespace ElectionManagementSystem.Views
             List<Party> allParties = db.Parties.ToList();
             List<Party> sortedParties = allParties.OrderByDescending(p => p.Votes).ThenBy(p => p.Partyname).ToList();
 
-
+            if(sortedParties.Count == 0)
+            {
+                lblCheckParties.Text = "No Parties are there in election currently. You may visit later.";
+            }
 
 
             foreach (Party party in sortedParties)

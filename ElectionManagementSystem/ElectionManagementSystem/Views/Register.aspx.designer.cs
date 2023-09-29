@@ -78,6 +78,15 @@ namespace ElectionManagementSystem.Views
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDOB;
 
         /// <summary>
+        /// cvAgeCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvAgeCheck;
+
+        /// <summary>
         /// tbDOB control.
         /// </summary>
         /// <remarks>

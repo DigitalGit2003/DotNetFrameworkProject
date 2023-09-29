@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Collections.Specialized.BitVector32;
 
 namespace ElectionManagementSystem.Views
 {
@@ -24,6 +26,11 @@ namespace ElectionManagementSystem.Views
             using (EMSEntities db = new EMSEntities())
             {
                 var parties = db.Parties.ToList();
+                if(parties.Count == 0)
+                {
+                    lblCheckParties.Text = "No Parties are there in election currently. You may visit later.";
+                    Response.Write("<script>alert('No Parties are there in election currently. You may visit later.');</script>");
+                }
                 PartyGridView.DataSource = parties;
                 PartyGridView.DataBind();
             }

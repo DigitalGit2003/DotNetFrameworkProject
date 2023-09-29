@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/EMS.Master" AutoEventWireup="true" CodeBehind="VoterProfile.aspx.cs" Inherits="ElectionManagementSystem.Views.VoterProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -25,7 +26,7 @@
                             <div class="col-md-6">
                                 <label for="dob">Date of Birth</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbDOB" runat="server" placeholder="Date of Birth" TextMode="Date"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbDOB" runat="server" placeholder="Date of Birth" TextMode="Date" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +35,7 @@
                             <div class="col-md-6">
                                 <label for="phone">Phone </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbPhone" runat="server" placeholder="Phone"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbPhone" runat="server" placeholder="Name" ></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +45,7 @@
                             <div class="col">
                                 <label for="address">Full Address</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbAddress" runat="server" placeholder="Full Address" Rows="2"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbAddress" runat="server" placeholder="Name" ></asp:TextBox>
                                 </div>
                             </div>
                         </div>

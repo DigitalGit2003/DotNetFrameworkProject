@@ -15,6 +15,9 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <center >
+        <asp:Label ID="lblCheckParties" runat="server"></asp:Label>
+    </center>
 
     <asp:PlaceHolder ID="ItemPlaceholder" runat="server">
          

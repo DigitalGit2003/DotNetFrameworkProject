@@ -15,6 +15,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <center >
+        <asp:Label ID="lblCheckParties" runat="server"></asp:Label>
+    </center>
+
      <asp:GridView ID="PartyGridView" runat="server" CssClass="party-grid" AutoGenerateColumns="False">
     <Columns>
         <asp:TemplateField HeaderText="Party Name">
