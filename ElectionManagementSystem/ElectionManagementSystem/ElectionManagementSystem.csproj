@@ -89,6 +89,7 @@
       <DependentUpon>EMSModel.edmx</DependentUpon>
       <LastGenOutput>EMSModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Images\background.jpg" />
     <Content Include="Images\admin.png" />
     <Content Include="Images\bg1.jpeg" />
     <Content Include="Images\bg2.png" />
@@ -97,6 +98,7 @@
     <Content Include="Views\AddParty.aspx" />
     <Content Include="Views\AdminLogin.aspx" />
     <Content Include="Views\Home.aspx" />
+    <Content Include="Views\Index.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\Register.aspx" />
     <Content Include="Views\UserLogin.aspx" />
@@ -154,6 +156,13 @@
     </Compile>
     <Compile Include="Views\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

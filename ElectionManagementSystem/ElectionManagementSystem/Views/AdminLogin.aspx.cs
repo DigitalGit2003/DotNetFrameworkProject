@@ -19,18 +19,24 @@ namespace ElectionManagementSystem.Views
             string uname = tbAdminname.Text;
             string password = tbPassword.Text;
 
-            if (uname == "admin" && password == "a")
+            using(EMSEntities db = new EMSEntities())
             {
-                Session["role"] = "admin";
+                Admin admin = db.Admins.Where(x => x.Username == uname && x.Password == password).FirstOrDefault<Admin>();
+                
+                if (admin != null)
+                {
+                    Session["role"] = "admin";
 
-                Response.Write("<script>alert('" + Session["role"] + "');</script>");
+                    //Response.Write("<script>alert('" + Session["role"] + "');</script>");
 
-                Response.Redirect("Home.aspx");
+                    Response.Redirect("Home.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>alert('Enter Correct Credential');</script>");
+                }
             }
-            else
-            {
-                Response.Write("<script>alert('" + "Enter Correct Credential : Wrong " + "');</script>");
-            }
+
         }
     }
 }

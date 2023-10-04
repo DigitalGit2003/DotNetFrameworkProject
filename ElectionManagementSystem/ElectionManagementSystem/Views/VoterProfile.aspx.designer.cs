@@ -33,24 +33,6 @@ namespace ElectionManagementSystem.Views
         protected global::System.Web.UI.WebControls.TextBox tbDOB;
 
         /// <summary>
-        /// tbPhone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPhone;
-
-        /// <summary>
-        /// tbAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbAddress;
-
-        /// <summary>
         /// tbEmail control.
         /// </summary>
         /// <remarks>

@@ -20,7 +20,7 @@
                             <div class="col-md-6">
                                 <label for="name">Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="tbName" runat="server" placeholder="Name" ></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tbName" runat="server" placeholder="Name" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="row">
+                        <%--<div class="row">
                             <div class="col-md-6">
                                 <label for="phone">Phone </label>
                                 <div class="form-group">
@@ -48,7 +48,7 @@
                                     <asp:TextBox CssClass="form-control" ID="tbAddress" runat="server" placeholder="Name" ></asp:TextBox>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="row">
                             <div class="col text-center">
                                 <span class="badge badge-pill badge-info">Login Credentials</span>

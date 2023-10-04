@@ -29,9 +29,9 @@ namespace ElectionManagementSystem.Views
             tbName.Text = name;
             tbEmail.Text = email;
             tbDOB.Text = dob;
-            tbAddress.Text = address;
+            //tbAddress.Text = address;
             tbOldPassword.Text = oldpassword;
-            tbPhone.Text = phone;
+            //tbPhone.Text = phone;
 
 
         }
@@ -42,14 +42,14 @@ namespace ElectionManagementSystem.Views
             string name = tbName.Text;
             string dob = tbDOB.Text;
 
-            string address = tbAddress.Text;
-            string phone = tbPhone.Text;
+            //string address = tbAddress.Text;
+            //string phone = tbPhone.Text;
             string newpass = tbNewPassword.Text;
 
 
             // debugging
-            Response.Write("address : " + address);
-            Response.Write("phone : " + phone);
+            //Response.Write("address : " + address);
+            //Response.Write("phone : " + phone);
 
             if (newpass.Equals(""))
             {
@@ -63,8 +63,8 @@ namespace ElectionManagementSystem.Views
 
                 vtr.Name = name;
                 vtr.DOB = dob;
-                vtr.Address = address;
-                vtr.Phone = phone;
+                //vtr.Address = address;
+                //vtr.Phone = phone;
                 vtr.Password = newpass;
 
                 db.Entry(vtr).State = EntityState.Modified;
