@@ -5,16 +5,15 @@ If you want to manage election of some committee in which your voters are virtua
 It will help to find a candidate who has high votes from all voters. 
 
 ## Entities 
-|Name| |
-|---|---|
-|Admin| | 
-|Party| | 
-|Voter| | 
-
+|Name| 
+|---|
+|Admin| 
+|Party|  
+|Voter| 
 
 |Role|Functionality|
 |---|---|
-|Admin|Login, Add Parties which are participant in Election| 
+|Admin|Login, Add Parties which are involved in Election| 
 |Voter|Registration, Login, Profile Updation| 
 ||Vote any one exsiting Party| 
 
@@ -29,4 +28,9 @@ It will help to find a candidate who has high votes from all voters.
 ```
 EntityFramework
 Microsoft.CodeDom.Providers.DotNetCompilerPlatform 
+```
+### How to run this project
+
+```
+git clone https://github.com/DigitalGit2003/DotNetFrameworkProject.git
 ```
