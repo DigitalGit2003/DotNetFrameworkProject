@@ -30,7 +30,28 @@ EntityFramework
 Microsoft.CodeDom.Providers.DotNetCompilerPlatform 
 ```
 ### How to run this project
-
+> Clone repository
 ```
 git clone https://github.com/DigitalGit2003/DotNetFrameworkProject.git
 ```
+> Add in web.config file
+```
+<appSettings>
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+    <add key="ChartImageHandler" value="storage=file;timeout=20;dir=c:\TempImageFiles\;" />
+  </appSettings>
+```
+> Install packages
+
+```
+EntityFramework
+Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+```
+
+> Create following in your project
+
+```
+SQL Server Database
+ADO.net Entity Data Model
+```
+
