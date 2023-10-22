@@ -5,3 +5,10 @@ App_Data
 .vs
 # 
 packages 
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.Context.cs
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.Context.tt
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.cs
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.Designer.cs
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.edmx
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.edmx.diagram
+/ElectionManagementSystem/ElectionManagementSystem/EMSModel.tt
